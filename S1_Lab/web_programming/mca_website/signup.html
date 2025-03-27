@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: black;
+           
+        }
+        .conatiner {
+            width: 400px;
+            height: 520px;
+            border: 1px solid;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 50px;
+            border-radius: 15px;
+            background-color: white;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .input-group {
+            margin: 15px;
+        }
+
+        .input-group input,
+        select {
+            width: 100%;
+            height: 28px;
+            margin-top: 5px;
+            /* border: none;
+            border-bottom: 1px solid; */
+            /* border-radius: 4px; */
+
+        }
+
+        .input-group label {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            margin-left: 100px;
+
+        }
+
+        .btn button {
+            padding: 10px 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            /* background-color: ; */
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <form action="login.html">
+            <h1>SIGN UP</h1>
+            <div class="input-group">
+                <label for="">username</label>
+                <input type="text" name="" id="" required>
+            </div>
+            <div class="input-group">
+                <label for="">email</label>
+                <input type="email" name="" id="" required>
+            </div>
+            <div class="input-group">
+                <label for="">phone</label>
+                <input type="tel" name="" id="" required>
+            </div>
+            <div class="input-group">
+                <label for="">Register as</label>
+                <select name="" id="" required>
+                    <option value="" selected></option>
+                    <option value="">student</option>
+                    <option value="">staff</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="">password</label>
+                <input type="pass" name="" id="" required>
+            </div>
+            <div class="input-group">
+                <label for="">confirm password</label>
+                <input type="pass" name="" id="" required>
+            </div>
+            <div class="btn">
+                <a href="login.html"><button >SIGN UP</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

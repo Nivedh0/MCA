@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<script>
+
+function upper()
+{
+let name=document.getElementById("fullname").value;
+
+alert(name.toUpperCase());
+}
+function lower()
+{
+let name=document.getElementById("fullname").value;
+
+alert(name.toLowerCase());
+}
+
+</script>
+</head>
+<body>
+<H1>dispaly name in uppercase/lowercase</H1>
+<form>
+
+<input type="text" id="fullname"><BR><BR>
+<button type="submit" onClick="upper()">UPPERCASE</button><BR><BR>
+<button type="submit" onClick="lower()">LOWERCASE</button>	
+</form>
+</body>
+</html>

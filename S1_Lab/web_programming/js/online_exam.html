@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online exam</title>
+</head>
+
+<body>
+    <form action="" name="exm">
+        <h3>1) Which type of JavaScript language is</h3>
+        <ul type="none">
+            <li><input type="radio" name="q1" id="q1" value="q1a">Object-Oriented</li>
+            <li><input type="radio" name="q1" id="q1" value="q1b">Object-Based</li>
+            <li><input type="radio" name="q1" id="q1" value="q1c">Assembly-language</li>
+            <li><input type="radio" name="q1" id="q1" value="q1d">High-level</li>
+        </ul>
+        <h3>2.Which one of the following also known as Conditional Expression </h3>
+        <ul type="none">
+            <li><input type="radio" name="q2" id="q2" value="q2a">Alternative to if-else</li>
+            <li><input type="radio" name="q2" id="q2" value="q2b">Switch statement</li>
+            <li><input type="radio" name="q2" id="q2" value="q2c">If-then-else statement</li>
+            <li><input type="radio" name="q2" id="q2" value="q2d">immediate if</li>
+        </ul>
+        <h3>3.The "function" and " var" are known as:</h3>
+        <ul type="none">
+            <li><input type="radio" name="q3" id="q3" value="q3a">Keywords</li>
+            <li><input type="radio" name="q3" id="q3" value="q3b">Data types</li>
+            <li><input type="radio" name="q3" id="q3" value="q3c">Declaration statements</li>
+            <li><input type="radio" name="q3" id="q3" value="q3d">Prototypes</li>
+        </ul>
+        <h3>4.HTML stands for </h3>
+        <ul type="none">
+            <li><input type="radio" name="q4" id="q4" value="q4a">HighText Machine Language</li>
+            <li><input type="radio" name="q4" id="q4" value="q4b">HyperText and links Markup Language</li>
+            <li><input type="radio" name="q4" id="q4" value="q4c">HyperText Markup Language</li>
+            <li><input type="radio" name="q4" id="q4" value="q4d">None of these</li>
+        </ul>
+        <h3>5. The correct sequence of HTML tags for starting a webpage is </h3>
+        <ul type="none">
+            <li><input type="radio" name="q5" id="q5" value="q5a">Head, Title, HTML, body</li>
+            <li><input type="radio" name="q5" id="q5" value="q5b">HTML, Body, Title, Head</li>
+            <li><input type="radio" name="q5" id="q5" value="q5c">HTML, Head, Title, Body</li>
+            <li><input type="radio" name="q5" id="q5" value="q5d">HTML, Head, Title, Body</li>
+        </ul>
+        <input type="button" onclick="marks();" VALUE="SUBMIT">
+    </form>
+
+    <script>
+        function marks() {
+            var a = document.exm.q1.value;
+            var b = document.exm.q2.value;
+            var c = document.exm.q3.value;
+            var d = document.exm.q4.value;
+            var e = document.exm.q5.value;
+
+            var m = 0;
+
+            if (a == "q1b") {
+                m = m + 1;
+            }
+            if (b == "q2d") {
+                m = m + 1;
+            }
+            if (c == "q3c") {
+                m = m + 1;
+            }
+            if (d == "q4c") {
+                m = m + 1;
+            }
+            if (e == "q5d") {
+                m = m + 1;
+            }
+
+            alert("You have got " + m + " marks");
+
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

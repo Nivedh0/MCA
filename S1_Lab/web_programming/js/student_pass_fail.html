@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pass/fail</title>
+<script>
+function check(){
+var mark=Number(document.form_mark.num.value);
+if(mark=="")
+{
+alert("please enter mark");
+return;
+}
+if(mark>=50)
+{
+alert("passed");
+return;
+}
+else{
+alert("failed");
+return;
+}
+
+
+}
+
+</script>
+</head>
+<body>
+<form name="form_mark">
+<h1>student pass/fail</h1>
+<input type="text" name="num">
+<br><br>
+<button type="submit" onclick="check()">check</button>
+</form>
+
+</body>
+</html>

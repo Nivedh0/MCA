@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>days</title>
+
+<script>
+
+function daycheck()
+{
+var n=Number(document.formcheck.num.value);
+
+var day;
+switch(n)
+{
+case 1:day="sunday";
+break;
+case 2:day="monday";
+break;
+case 3:day="tuesday";
+break;
+case 4:day="wednesday";
+break;
+case 5:day="thursday";
+break;
+case 6:day="friday";
+break;
+case 7:day="saturday";
+break;
+default:day="invalid";
+}
+alert(day);
+}
+</script>
+
+</head>
+<body>
+
+<form name="formcheck">
+<h1>day of week</h1>
+<input type="text" name="num">
+<button type="submit" onClick="daycheck()">check</button>
+
+</form>
+
+</body>
+</html>

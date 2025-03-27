@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form onsubmit="return validate()" name="reg">
+    Name: <input type="text" id="name"required><br><br>
+    Email: <input type="email" id="email"required><br><br>
+    Password: <input type="password" id="password"required><br><br>
+    Confirm Password: <input type="password" id="confirmPassword"required><br><br>
+    Phone: <input type="text" id="phone"required><br><br>
+    <input type="submit" value="Register">
+  </form>
+
+  <script>
+    function validate() {
+      
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirmPassword").value;
+      let phone = document.getElementById("phone").value;
+
+      
+      let namepattern=/^[a-zA-Z]+$/;
+      if(!name.match(namepattern))
+      {
+        alert("only letters allowed");
+        return false;
+      }
+      let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!email.match(emailPattern)) {
+        alert("Invalid email address");
+        return false;
+      }
+      passpattern=/^[a-zA-Z0-9]+@{1}/;
+      if(password.length === 8)
+      {
+        alert("minimum 8 character");
+        return false;
+      }else if(!password.match(passpattern))
+         {
+          alert("password contain letters,digit and one special character");
+          return false;
+         }
+      
+      if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return false;
+      }
+
+      let phonePattern = /^[0-9]{10}$/;
+      if (!phone.match(phonePattern)) {
+        alert("Invalid phone number");
+        return false;
+      }
+      
+      return true;
+    }
+  </script>
+</body>
+</html>
+
+

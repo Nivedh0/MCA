@@ -1,0 +1,57 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,rgba(0, 210, 255, 0.8),  rgba(166, 75, 241, 0.82),rgba(255, 0, 132, 0.8));
+    
+}
+.container{
+    width: 400px;
+    height: 450px;
+    border: 1px solid;
+   margin: auto;
+   margin-top: 100px;
+   background-color: white;
+   border-radius: 20px;
+   
+}
+.mca-img{
+    height: 200px;
+    width: 100%;
+    
+    
+    
+} 
+.mca-img img{
+    
+    height: 200px;
+    width:400px;
+    padding: 10px;
+
+    
+}
+.btn{
+    
+    margin-left: 100px;
+   
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+button{
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    background-color: darkorange;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
