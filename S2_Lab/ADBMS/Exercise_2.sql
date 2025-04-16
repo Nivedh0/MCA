@@ -223,8 +223,8 @@ ALLEN		SALESMAN
 +--------------------+
 | EMPLOYEE AND JOB   |
 +--------------------+
-| Allen     Salesman |
 | Smith     Clerk    |
+| Allen     Salesman |
 +--------------------+
 2 rows in set (0.00 sec)
 
@@ -238,8 +238,8 @@ ALLEN(Salesman)
 +------------------+
 | EMPLOYEE AND JOB |
 +------------------+
-| Allen(Salesman)  |
-| Smith(Clerk)     |
+|  Smith(Clerk)    |
+|  Allen(Salesman) |
 +------------------+
 2 rows in set (0.00 sec)
 
