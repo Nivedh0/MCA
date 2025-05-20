@@ -1,10 +1,10 @@
-1.	Create a Mongodb Database named “Inventory”.
+1.Create a Mongodb Database named “Inventory”.
   
   test> use Inventory
   switched to db Inventory
   Inventory>
 
-2.	Create a collection named ‘Products’ and Insert the following documents. db.products.insertMany([
+2.Create a collection named ‘Products’ and Insert the following documents. db.products.insertMany([
 { "_id" : 1, "name" : "xPhone", "price" : 799, "releaseDate": ISODate("2011-05-
 14"), "spec" : { "ram" : 4, "screen" : 6.5, "cpu" : 2.66
 },"color":["white","black"],"storage":[64,128,256]},
@@ -74,7 +74,7 @@
   insertedIds: { '0': 1, '1': 2, '2': 3, '3': 4, '4': 5 }
 }
   
-3.	Display all documents in the collection product. 
+3.Display all documents in the collection product. 
 
   Inventory> db.Products.find()
 [
@@ -125,7 +125,7 @@
   }
 ]
   
-4.	Display all the details of product with _ id is 2. 
+4.Display all the details of product with _ id is 2. 
 
   Inventory> db.Products.find({ _id: 2 })
 [
@@ -140,7 +140,7 @@
   }
 ]
   
-5.	Display the first document in the collection product. 
+5.Display the first document in the collection product. 
 
   Inventory> db.Products.findOne()
 {
@@ -153,12 +153,12 @@
   storage: [ 64, 128, 256 ]
 }
   
-6.	Display name and price of product with _ id is 5. 
+6.Display name and price of product with _ id is 5. 
 
   Inventory> db.Products.find({ _id: 5 }, { name: 1, price: 1, _id: 0 })
 [ { name: 'SmartPhone', price: 599 } ]
   
-7.	Query the products collection to select all documents where the value of the price field equals 899.
+7.Query the products collection to select all documents where the value of the price field equals 899.
 
   Inventory> db.Products.find({ price: 899 })
 [
@@ -182,7 +182,7 @@
   }
 ]
   
-8.	 Search for documents where the value of the ram field in the spec document equals 4:
+8.Search for documents where the value of the ram field in the spec document equals 4:
 
   Inventory> db.Products.find({ "spec.ram": 4 })
 [
@@ -206,7 +206,7 @@
   }
 ]
   
-9.	Query the products collection to find all documents where the array color contains an element with the value "black":
+9.Query the products collection to find all documents where the array color contains an element with the value "black":
 
   Inventory> db.Products.find({ color: "black" })
 [
@@ -230,7 +230,7 @@
   }
 ]
   
-10.	Select documents in the products collection with the published date is 2020-05-14:  
+10.Select documents in the products collection with the published date is 2020-05-14:  
 
   Inventory> db.Products.find({ releaseDate: ISODate("2020-05-14") })
 [
@@ -245,7 +245,7 @@
   }
 ]
   
-11.	select documents from the products collection where price is less than 799: 
+11.select documents from the products collection where price is less than 799: 
 
   Inventory> db.Products.find({ price: { $lt: 799 } })
 [
@@ -269,7 +269,7 @@
   }
 ]
   
-12.	select documents where the value of the screen field in the spec document is less than 7: 
+12.select documents where the value of the screen field in the spec document is less than 7: 
 
   Inventory> db.Products.find({ "spec.screen": { $lt: 7 } })
 [
@@ -284,7 +284,7 @@
   }
 ]
   
-13.	 query the products collection to find all documents where the array storage has at least one element less than 128:
+13.	query the products collection to find all documents where the array storage has at least one element less than 128:
 
   Inventory> db.Products.find({ storage: { $elemMatch: { $lt: 128 } } })
 [
@@ -308,7 +308,7 @@
   }
 ]
   
-14.	Display documents from the products collection whose the price is either 599 or 799: 
+14.Display documents from the products collection whose the price is either 599 or 799: 
 
   Inventory> db.Products.find({ price: { $in: [599, 799] } })
 [
@@ -332,7 +332,7 @@
   }
 ]
   
-15.	Display documents where the color array has at least one element either "black" or "white":
+15.Display documents where the color array has at least one element either "black" or "white":
 
   Inventory> db.Products.find({ color: { $in: ["black", "white"] } })
 [
@@ -374,7 +374,7 @@
   }
 ]
   
-16.	Display documents from the products collection whose price is neither 599 or 799: 
+16.Display documents from the products collection whose price is neither 599 or 799: 
 
   Inventory> db.Products.find({ price: { $nin: [599, 799] } })
 [
@@ -407,7 +407,7 @@
   }
 ]
   
-17.	 Display	documents	where	the color array	doesn’t	have	an	element	that	is either "black" or "white":
+17.Display	documents	where	the color array	doesn’t	have	an	element	that	is either "black" or "white":
 
   Inventory> db.Products.find({ color: { $nin: ["black", "white"] } })
 [
@@ -422,7 +422,7 @@
   }
 ]
   
-18.	Display all documents in the products collection where the value in the price field is equal to 899 and the value in the color field is either "white" or "black"
+18.Display all documents in the products collection where the value in the price field is equal to 899 and the value in the color field is either "white" or "black"
 
   Inventory> db.Products.find({
   price: 899,
@@ -438,7 +438,7 @@
     storage: [ 128, 256, 512 ]
   }
 ]
-19.	Select all documents where the price is less than 699 or greater than 799 
+19.Select all documents where the price is less than 699 or greater than 799 
 
 Inventory> db.Products.find({
 $or: [
