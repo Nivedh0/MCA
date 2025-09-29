@@ -1,0 +1,15 @@
+Outlook,Temp,Humidity,Windy,Play Cricket
+Rainy,Hot,High,No,No
+Rainy,Hot,High,Yes,No
+Overcast,Hot,High,No,Yes
+Sunny,Mild,High,No,Yes
+Sunny,Cool,Normal,No,Yes
+Sunny,Cool,Normal,Yes,No
+Overcast,Cool,Normal,Yes,Yes
+Rainy,Mild,High,No,No
+Rainy,Cool,Normal,No,Yes
+Sunny,Mild,Normal,No,Yes
+Rainy,Mild,Normal,Yes,Yes
+Overcast,Mild,High,Yes,Yes
+Overcast,Hot,Normal,No,Yes
+Sunny,Mild,High,Yes,No
