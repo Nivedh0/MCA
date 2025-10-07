@@ -1,0 +1,69 @@
+PROGRAM-1
+AIM: Review of python program.
+Question1:- Write a python program to create a calculator.
+2. Write a basic program for Boolean operation.
+3. Write a program to merge two dictionaries.
+4. Write a program to print largest among 3 numbers from user inputs.
+5. Write a program to Perform basic List operations such as append,
+insert, delete, remove and copy.
+Code 1
+print("Select operation: 1.Addition, 2.Substraction, 3.multiplication, 4.Division, /")
+ch = input("Enter choice: ")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+if ch == '1':
+print("Result:", num1 + num2)
+elif ch == '2':
+print("Result:", num1 - num2)
+elif ch == '3':
+print("Result:", num1 * num2)
+elif ch == '4':
+if num2 != 0:
+print("Result:", num1 / num2)
+else:
+print("Error: Division by zero!")
+else:
+print("Invalid operator")
+Code 2
+a = 5
+b = 8
+print("a AND b:", a and b)
+print("a OR b:", a or b)
+print("NOT a:", not a)
+print("a > b:", a > b)
+print("a == b:", a == b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
+print("a < b:", a < b)
+Code 3
+def merge_dictionaries():
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+merged_dict = dict1.copy()
+merged_dict.update(dict2)
+print("Merged Dictionary:", merged_dict)
+merge_dictionaries()
+Code 4
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+c = float(input("Enter third number: "))
+if a >= b and a >= c:
+largest = a
+elif b >= a and b >= c:
+largest = b
+else:
+largest = c
+print("The largest number is:", largest)
+Code 5
+a = [1, 2, 3]
+print("Original List:", a)
+a.append(4)
+print("After Append:", a)
+a.insert(1, 10)
+print("After Insert at index 1:", a)
+del a[2]
+print("After Deleting element at index 2:", a)
+a.remove(10)
+print("After Removing 10:", a)
+copied_list = a.copy()
+print("Copied List:", copied_list
